@@ -1,498 +1,502 @@
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+
+:root{
+    --container: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    min-height: 100vh;
+    background-image: url("/img/1 (1).jpg");
+}
+
+/* [class*='col'] {
+    float: left;
+    min-height: 1px;
+    width: calc(100% / 12);
+    margin: var(--gutter);
+} */
+
+
+
+/* Phone size breakpoint */
+@media only screen and (max-width: 719px) {
+    [class*='col'] { width: calc(100% - calc(var(--gutter) * 2)); }
+}
+
+/* Bigger Phone size breakpoint */
+@media only screen and (min-width: 720px) {
+    .container { --container: 800px; }
+    .col { width: calc(100% / 12 * 6  - calc(var(--gutter) * 2)) !important; }
+}
+
+/* Tablet size breakpoint */
+@media only screen and (min-width: 960px) {
+    .container { --container: 1000px; }
+    .col { width: calc(100% / 12 * 6  - calc(var(--gutter) * 2)); }
+}
+
+/* Laptop size breakpoint */
+@media only screen and (min-width: 1280px) {
+    .container { --container: 1200px; }
+    .col { width: calc(100% / 12 * 6  - calc(var(--gutter) * 2)); }
+}
+
+/* Desktop size breakpoint */
+@media only screen and (min-width: 1520px) {
+    .container { --container: 1400px; }
+}
+
+
+.one{
+    width: 25%;
+    height: 90vh;
+    background-color: rgba(250, 250, 250, 0.8);
+    display: inline-block;
+    vertical-align: top;
+    padding: 3% 2% 1% 3%;
+    margin: 3% 2% 3% 3%;
+    overflow: hidden;
+}
+
+.profile_picture{
+    text-align: center;
+}
+
+        .name{
+            font-family: 'Libre Barcode 39 Text', cursive;
+            font-size: 32px;
+            margin-bottom: 2%;
         }
 
-/* ----------fonts------------- */
-    h3{
-        letter-spacing: 2px;
-    }
+.contact_info{
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
 
-    h2{
-        letter-spacing: 2px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 900;
-        font-size: 190%;
-        color: white;
-    }
+.buttons{
+    display: flex;
+    justify-content: center;
+}
 
-    p{
-        letter-spacing: 1px;
-    }
-
-    li{
-        font-weight: 500;
-    }
-
-    a{
-        letter-spacing: 2px;
-    }
-
-/* ----------UNIVERSAL_CALL------------- */
-    .container{
-        max-height: 100%;
-        padding:1%;
-        font-family: 'Montserrat', serif;
-        font-size: 13px;
-        background-image: url("/img/1 (1).jpg");
-        color:#292929;
-    }
-
-    .scroll{
-        overflow-y: scroll;
-        max-height: 80vh;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
+        .button{
+            border: none;
+            padding: 5px 10px;
+            text-decoration-line: none;
+            color:white;
+            /* box-shadow: 2px 2px 4px #fe966d; */
+            border-radius: 2px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 13px;
+            background: linear-gradient(to bottom, rgb(124, 124, 124), #383838 80%);
+            box-shadow: 0px 2px 4px rgb(134, 134, 134);
         }
 
-/* ----------COLUMN1------------- */
-    .column1{
-        width: 25%;
-        height: 90vh;
-        background-color: rgba(250, 250, 250, 0.8);
-        display: inline-block;
-        vertical-align: top;
-        padding: 3% 2% 0% 3%;
-        margin: 3% 2% 3% 3%;
-        overflow: hidden;
-    }
-
-            .profile_picture{
-                text-align: center;
-            }
-            
-                    .name{
-                        font-family: 'Libre Barcode 39 Text', cursive;
-                        font-size: 32px;
-                        margin-bottom: 2%;
-                    }
-
-            .contact_info{
-                text-align: right;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 500;
-                font-size: 13px;
-            }
-
-            .buttons{
-                display: flex;
-                justify-content: flex-end;
-            }
-
-                    .button{
-                        border: none;
-                        padding: 5px 10px;
-                        text-decoration-line: none;
-                        color:white;
-                        /* box-shadow: 2px 2px 4px #fe966d; */
-                        border-radius: 2px;
-                        margin-left: 10px;
-                        margin-bottom: 5px;
-                        font-weight: 600;
-                        font-size: 13px;
-                        background: linear-gradient(to bottom, rgb(124, 124, 124), #383838 80%);
-                    }
-
-            .bars{
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 600;
-                font-size: 10px;
-            }
-
+.bars{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+}
 
 /* ----------COLUMN2------------- */
-    .column2{
-        display: inline-block;
-        width: 22%;
-        height: 90vh;
-        background-color: rgba(187, 245, 27, 0.65);
-        padding: 0% 2% 3% 3%;
-        margin: 3% 1% 3% 1%;
-        vertical-align: top;
-        overflow: hidden;
-    }
+.two{
+    display: inline-block;
+    width: 22%;
+    height: 90vh;
+    background-color: rgba(187, 245, 27, 0.65);
+    padding: 0% 2% 3% 3%;
+    margin: 3% 1% 3% 1%;
+    vertical-align: top;
+    overflow: hidden;
+}
 
-    .arrow{
-        padding: 1% 3%;
-        color:rgb(93, 93, 93);
-        font-size: 250%;
-        width:108%;
-        margin-top: 3%;
-        text-align: end;
-    }
+.arrow{
+    padding: 1% 3%;
+    color:rgb(93, 93, 93);
+    font-size: 250%;
+    width:108%;
+    margin-top: 3%;
+    text-align: end;
+}
 
-    .cap{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 13px;
-    }
+.cap{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
 
-    .indent{
-        padding-left: 6%;
-    }
+.indent{
+    padding-left: 6%;
+}
 
-    .white{
-        letter-spacing: 2px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 900;
-        font-size: 130%;
-        color: white;
-        
-    }
-
-    .education{
-        display: inline-block;
-        margin-top: 2%;
-        text-align: right;
-    }
+.white{
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    color: white;
     
-            .egroup {
-                display: inline-block;
-                width:13vw;
-                height: 100%;
-                vertical-align: top;
-            
-            }
+}
+
+.education{
+    display: inline-block;
+    margin-top: 2%;
+    text-align: right;
+}
+
+        .egroup {
+            display: inline-block;
+            width:13vw;
+            height: 100%;
+            vertical-align: top;
+        
+        }
 
 /* ----------COLUMN3------------- */
-    .column3{
-        display: inline-block;
-        width: 40%;
-        height: 90vh;
-        background-color: rgba(187, 245, 27, 0.3);
-        padding: 2% 3% 3% 3%;
-        margin: 3% 3% 3% 2%;
-        vertical-align: top;
-        overflow: hidden;
-    }
+.three{
+    display: inline-block;
+    width: 40%;
+    height: 90vh;
+    background-color: rgba(187, 245, 27, 0.3);
+    padding: 2% 3% 3% 3%;
+    margin: 3% 3% 3% 2%;
+    vertical-align: top;
+    overflow: hidden;
+}
 
-    .vidlinks a:hover {
-        filter: brightness(40%);
-        cursor: pointer;
-    }
-            
-            video{
-                width:100%;
-                height:300%;
-                border:0;
-                border-radius: 3px; 
-                margin-bottom: 6%;
-            }
+.vidlinks a:hover {
+    filter: brightness(40%);
+    cursor: pointer;
+}
+        
+        video{
+            width:100%;
+            height:300%;
+            border:0;
+            border-radius: 3px; 
+            margin-bottom: 6%;
+        }
 
 /* -----------------------progress bars---------------------------- */
 /* -----------------------progress bars---------------------------- */
 /* -----------------------progress bars---------------------------- */
-    .cssbar{
-    background-color: rgb(230, 230, 230);
+.cssbar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.cssbar>div{
+    /* background: linear-gradient(to right, #fe5769 50%, #c7529a 80%); */
+    background-color: #292929;
+    animation: stretch80 1s ease-out;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.58, 1);
+    max-width:80%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .cssbar>div{
-        /* background: linear-gradient(to right, #fe5769 50%, #c7529a 80%); */
-        background-color: #292929;
-        animation: stretch80 1s ease-out;
-        animation-timing-function: cubic-bezier(0.280, 0.840, 0.58, 1);
-        max-width:80%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(104, 104, 104);
-    }
+    box-shadow: 0px 2px 4px rgb(104, 104, 104);
+}
 
-    .htmlbar{
-    background-color: rgb(230, 230, 230);
+.htmlbar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.htmlbar>div{
+    background-color: #292929;
+    animation: stretch90 1s ease-out;
+    max-width:90%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .htmlbar>div{
-        background-color: #292929;
-        animation: stretch90 1s ease-out;
-        max-width:90%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(104, 104, 104);
-    }
+    box-shadow: 0px 2px 4px rgb(104, 104, 104);
+}
 
-    .reactbar{
-    background-color: rgb(230, 230, 230);
+.reactbar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.reactbar>div{
+    background-color: #292929;
+    animation: stretch40 1s ease-out;
+    max-width:40%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .reactbar>div{
-        background-color: #292929;
-        animation: stretch40 1s ease-out;
-        max-width:40%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(104, 104, 104);
-    }
+    box-shadow: 0px 2px 4px rgb(104, 104, 104);
+}
 
-    .pythonbar{
-    background-color: rgb(230, 230, 230);
+.pythonbar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.pythonbar>div{
+    background-color: #3E432E;
+    animation: stretch60 1s ease-out;
+    max-width:60%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .pythonbar>div{
-        background-color: #3E432E;
-        animation: stretch60 1s ease-out;
-        max-width:60%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(104, 104, 104);
-    }
+    box-shadow: 0px 2px 4px rgb(104, 104, 104);
+}
 
-    .jsbar{
-    background-color: rgb(230, 230, 230);
+.jsbar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.jsbar>div{
+    background-color: #3E432E;
+    animation: stretch80 1s ease-out;
+    max-width: 80%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .jsbar>div{
-        background-color: #3E432E;
-        animation: stretch80 1s ease-out;
-        max-width: 80%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(104, 104, 104);
-    }
+    box-shadow: 0px 2px 4px rgb(104, 104, 104);
+}
 
-    .cbar{
-    background-color: rgb(230, 230, 230);
+.cbar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.cbar>div{
+    background-color: #3E432E;
+    animation: stretch10 1s ease-out;
+    max-width:10%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .cbar>div{
-        background-color: #3E432E;
-        animation: stretch10 1s ease-out;
-        max-width:10%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(104, 104, 104);
-    }
+    box-shadow: 0px 2px 4px rgb(104, 104, 104);
+}
 
-    .nosqlbar{
-    background-color: rgb(230, 230, 230);
+.nosqlbar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.nosqlbar>div{
+    background-color: #616f39;
+    animation: stretch60 1s ease-out;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.58, 1);
+    max-width:60%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .nosqlbar>div{
-        background-color: #616f39;
-        animation: stretch60 1s ease-out;
-        animation-timing-function: cubic-bezier(0.280, 0.840, 0.58, 1);
-        max-width:60%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(104, 104, 104);
-    }
+    box-shadow: 0px 2px 4px rgb(104, 104, 104);
+}
 
-    .mysqlbar{
-    background-color: rgb(230, 230, 230);
+.mysqlbar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.mysqlbar>div{
+    background-color: #616f39;
+    animation: stretch30 1s ease-out;
+    max-width:30%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .mysqlbar>div{
-        background-color: #616f39;
-        animation: stretch30 1s ease-out;
-        max-width:30%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(104, 104, 104);
-    }
+    box-shadow: 0px 2px 4px rgb(104, 104, 104);
+}
 
-    .mongobar{
-    background-color: rgb(230, 230, 230);
+.mongobar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.mongobar>div{
+    background-color: #616f39;
+    animation: stretch70 1s ease-out;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.58, 1);
+    max-width:70%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .mongobar>div{
-        background-color: #616f39;
-        animation: stretch70 1s ease-out;
-        animation-timing-function: cubic-bezier(0.280, 0.840, 0.58, 1);
-        max-width:70%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(104, 104, 104);
-    }
-    
-    .djangobar{
-    background-color: rgb(230, 230, 230);
-    border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .djangobar>div{
-        background-color: #a7d129;
-        animation: stretch50 1s ease-out;
-        max-width:50%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(173, 173, 173);
-    }
+    box-shadow: 0px 2px 4px rgb(104, 104, 104);
+}
 
-    .flaskbar{
-        background-color: rgb(230, 230, 230);
+.djangobar{
+background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.djangobar>div{
+    background-color: #a7d129;
+    animation: stretch50 1s ease-out;
+    max-width:50%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .flaskbar>div{
-        background-color: #a7d129;
-        animation: stretch20 1s ease-out;
-        max-width:20%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(173, 173, 173);
-    }
+    box-shadow: 0px 2px 4px rgb(173, 173, 173);
+}
 
-    .aspbar{
-        background-color: rgb(230, 230, 230);
+.flaskbar{
+    background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.flaskbar>div{
+    background-color: #a7d129;
+    animation: stretch20 1s ease-out;
+    max-width:20%;
+    height: 20px;
     border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2%;
-    text-align: end;
-    box-shadow: 0px 2px 4px rgb(202, 202, 202);
-    color: white;
-    }
-    .aspbar>div{
-        background-color: #a7d129;
-        animation: stretch30 1s ease-out;
-        max-width:30%;
-        height: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgb(173, 173, 173);
-    }
-    
+    box-shadow: 0px 2px 4px rgb(173, 173, 173);
+}
+
+.aspbar{
+    background-color: rgb(230, 230, 230);
+border-radius: 10px;
+padding: 3px;
+margin-bottom: 2%;
+text-align: end;
+box-shadow: 0px 2px 4px rgb(202, 202, 202);
+color: white;
+}
+.aspbar>div{
+    background-color: #a7d129;
+    animation: stretch30 1s ease-out;
+    max-width:30%;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgb(173, 173, 173);
+}
+
 /* ----------------------progress bar animations----------------------------- */
-    
-    @keyframes stretch10{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 10%
-        }
-    }
 
-    @keyframes stretch20{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 20%
-        }
+@keyframes stretch10{
+    0%{
+        width: 5%;
     }
+    100%{
+        width: 10%
+    }
+}
 
-    @keyframes stretch30{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 30%
-        }
+@keyframes stretch20{
+    0%{
+        width: 5%;
     }
+    100%{
+        width: 20%
+    }
+}
 
-    @keyframes stretch40{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 40%
-        }
+@keyframes stretch30{
+    0%{
+        width: 5%;
     }
+    100%{
+        width: 30%
+    }
+}
 
-    @keyframes stretch50{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 50%
-        }
+@keyframes stretch40{
+    0%{
+        width: 5%;
     }
+    100%{
+        width: 40%
+    }
+}
 
-    @keyframes stretch60{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 60%
-        }
+@keyframes stretch50{
+    0%{
+        width: 5%;
     }
+    100%{
+        width: 50%
+    }
+}
 
-    @keyframes stretch70{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 70%
-        }
+@keyframes stretch60{
+    0%{
+        width: 5%;
     }
+    100%{
+        width: 60%
+    }
+}
 
-    @keyframes stretch80{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 80%
-        }
+@keyframes stretch70{
+    0%{
+        width: 5%;
     }
-    
-    @keyframes stretch90{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 90%
-        }
+    100%{
+        width: 70%
     }
+}
 
-    @keyframes stretch100{
-        0%{
-            width: 5%;
-        }
-        100%{
-            width: 100%
-        }
+@keyframes stretch80{
+    0%{
+        width: 5%;
     }
+    100%{
+        width: 80%
+    }
+}
+
+@keyframes stretch90{
+    0%{
+        width: 5%;
+    }
+    100%{
+        width: 90%
+    }
+}
+
+@keyframes stretch100{
+    0%{
+        width: 5%;
+    }
+    100%{
+        width: 100%
+    }
+}
