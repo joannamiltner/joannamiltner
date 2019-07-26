@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Merriweather|Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e2631e2240.js"></script>
     <style>
         </style>
 </head>
@@ -15,53 +16,60 @@
 <!-- ------COLUMN1------- -->
 <div class="container" >
 
-    <div class="column1">
+    <div class="profile_picture">
+        <img src="\img\hexheadshot.png" alt="Profile Picture" style="max-width:20vw;max-height:50vh;border:0;border-radius: 50px;">
+    </div>
+    <br>
+    <h1 class="name"
+    >Jo Miltner</h1>
 
-        <div class="profile_picture">
-            <img src="\img\hex.jpg" alt="Profile Picture" style="width:50%;height:50%;border:0;border-radius: 50px;">
-            <h1 class="name">Jo Miltner</h1>
-            <br>
-        </div>
 
-        <div class="scroll">
-        <span class="contact_info">
-            <p>joanna.miltner@gmail.com</p>
-            <p>917.993.4966</p>
-            <p>Washington, D.C.</p>
-        </span>
-        <br>
-        
-        <div class="buttons">
-            <a href="" class="button">LINKEDIN</a>
-            <a href="" class="button">GITHUB</a>
-            <a href="" class="button">PDF</a>
-        </div>
-        <br>
-
-            <div class="bars">
-        <h3>Front-End</h3>
-            <div class="cssbar"><div>CSS &nbsp;</div></div>
-            <div class="htmlbar"><div>HTML &nbsp;</div></div>
-            <div class="reactbar"><div>REACT &nbsp;</div></div>
-            <h3>Languages</h3>
-            <div class="pythonbar"><div>PYTHON &nbsp;</div></div>
-            <div class="jsbar"><div>JS &nbsp;</div></div>
-            <div class="cbar"><div>C# &nbsp;</div></div>
-            <h3>Databases</h3>
-            <div class="nosqlbar"><div>NOSQL &nbsp;</div></div>
-            <div class="mysqlbar"><div>MYSQL &nbsp;</div></div>
-            <div class="mongobar"><div>MONGO &nbsp;</div></div>
-            <h3>Frameworks</h3>
-            <div class="djangobar"><div>DJANGO &nbsp;</div></div>
-            <div class="flaskbar"><div>FLASK &nbsp;</div></div>
-            <div class="aspbar"><div>ASP.NET CORE &nbsp;</div></div>
+    <div class="groupone">
+            <div class="onetwo">
+                    <h3>Front End: &nbsp;<span>CSS / HTML</span></h3> 
+                        <div class="frontendbar"><div></div></div>
+                        <h3>Languages: &nbsp;<span>Python / JS</span></h3> 
+                <div class="lanbar"><div></div></div>
             </div>
-        </div>
 
+            <div class="buttons">
+            <a href="https://www.linkedin.com/in/jo-miltner-5b798859/" class="button"><div><i class="fab fa-linkedin-in"></i></div></a>
+            <a href="https://github.com/joannamiltner" class="button"><div><i class="fab fa-github"></i></div></a>
+            <a href="https://drive.google.com/file/d/1Gp3EtO62b3OlUCPlIDkKI7ZOFmPTym3W/view?ts=5d3b2ace" class="button"><div><i class="far fa-file-pdf"></i></div></a>
+            </div>
+
+            <div class="twotwo">
+                <h3>Databases: &nbsp;<span>mySQL / Mongo</span></h3> 
+                <div class="databar"><div></div></div>
+                <h3>Frameworks: &nbsp;<span>Django / REACT</span></h3> 
+                <div class="framebar"><div></div></div>
+            </div>
     </div>
 
+        <br>
+
+        <div class="column0">
+        <div class="quick"><a href="#column2" class="tab"><div>Employment</div></a><a href="#column3" class="tab2"><div>Portfolio</div></a>
+        </div></div>
+
+    <div class="column1">          
+            
+            <!-- <div class="scroll"> -->
+
+                    <div class="contact_info">
+                            <p>. .:: joanna.miltner@gmail.com ::. . </p>
+                            <p>.: Washington, D.C. :.</p>
+                        </div>
+                    <div class="bio">
+                        <p>My name is Jo Miltner and I'm a genuinely curious, enthusiastic full-stack developer with an extensive background in design.</p>
+                    </div>
+                    <br>
+
+            <br>
+        <!-- </div> -->
+    </div>
 <!-- ------COLUMN2------- -->
-<div class="column2">
+<div class="column2" id="column2">
 
     <div class="arrow">⇟</div>
     <br>    
@@ -69,7 +77,7 @@
     <h2>Employment History</h2>
     <br>
 
-    <div class="scroll">
+    <!-- <div class="scroll"> -->
 
                 <ul>
                     <ul><p class="cap">Elta North America: Operational and Training Technician (2017-2019)</p>
@@ -84,7 +92,7 @@
                         <p class="cap">Departure of the People: CEO, Founder, and Lead Designer (2014-2017)</p>
                             <ul><li> Duties include designing, prototyping, manufacturing goods, shipping, customer relations, cost analysis and keeping proper finanical records. Overseas factory communcations included blueprinting designs while translating numbers and basic words as needed for clear and concise readings, importing, working through customers, and seeing to the delivery of goods.</li></ul>
                         <br>
-                        <p class="cap">Asia Pacific Supermodel Contest China Division: Lead Costume Designer</p>
+                        <p class="cap">2009 Asia Pacific Supermodel Contest China Division: Lead Costume Designer</p>
                         <br>
                         <p class="cap">2009 Seoul Success Awards: Lead Costume Designer</b></p>
                         <br>
@@ -98,8 +106,8 @@
             <ul>
                 <div class="egroup">
                     <p class="cap">Coding Dojo</b></p>
-                        <ul>laksjdlfja;lskjdf</ul>
-                        <ul>2019</ul>
+                        <ul>Full Stack Developement</ul>
+                        <ul>(840 Hours) 2019</ul>
                         <br>
                 </div>
                 <div class="egroup">
@@ -109,33 +117,35 @@
                 </div>
                 <div class="egroup">
                     <p class="cap">Kook Get Institute</b></p>
-                        <ul>Seoul, Korea</ul>
-                        <ul>(320 Hours)</ul><br>
+                        <ul>Costume Design</ul>
+                        <ul>(320 Hours) 2009</ul><br>
                 </div>
                 <div class="egroup">
                     <p class="cap">Moda Lab Institute</b></p>
-                        <ul>(512 Hours)</ul>
-                        <ul>2019</ul><br>
+                        <ul>Costume Design</ul>
+                        <ul>(512 Hours) 2009</ul><br>
                 </div>
             </ul>
         </div>
-    </div>
+    <!-- </div> -->
 
 </div>
         
-<!-- ------COLUMN 2------ -->
-<div class="column3">
-<div class="scroll">
+<!-- ------COLUMN 3------ -->
+<div class="column3" id="column3">
+        <div class="arrow">⇟</div>
+    <br> 
+<!-- <div class="scroll"> -->
     <br>
-    <div class="vidlinks">      
-        <a><video src="/makeintogif/media.io_2019-06-27 12-27-47_Trim.mp4" autoplay loop muted>Your browser does not support HTML5 Player</video></a>
-        <a><video src="/makeintogif/media.io_2019-06-27 11-57-50 - Copy_Trim.mp4" autoplay loop muted>Your browser does not support HTML5 Player</video></a>
-        <a><video src="/makeintogif/media.io_2019-06-27 12-27-47_Trim.mp4" autoplay loop muted>Your browser does not support HTML5 Player</video></a>
+    <div class="vidlinks"> 
+        <a href="https://github.com/joannamiltner/Tamagotchi"><video src="/makeintogif/2019-07-19 17-09-19_Trim.mp4" autoplay loop muted>Your browser does not support HTML5 Player</video></a>
+        <a href="https://github.com/joannamiltner/Cucco_Minigame"><video src="/makeintogif/media.io_2019-06-27 11-57-50 - Copy_Trim.mp4" autoplay loop muted>Your browser does not support HTML5 Player</video></a>
+        <a href="https://github.com/joannamiltner/Random-String-Gen"><video src="/makeintogif/media.io_2019-06-27 12-27-47_Trim.mp4" autoplay loop muted>Your browser does not support HTML5 Player</video></a>
         <!-- change titles and folder? -->
     </div>  
 </div>
 </div>
-
+<!-- </div> -->
 </div>  
 <!-- ------END------ -->
 
