@@ -46,7 +46,7 @@
         max-height: 100%;
         font-family: 'Montserrat', serif;
         font-size: 13px;
-        background-image: url("img/1 (1).jpg");
+        background-image: url("img/1 (1)op8.jpg");
         color:#292929;
         display: flex;
         /* justify-content: center; */
@@ -71,6 +71,7 @@
         width: 80vw;
         min-height: 20%;
         background-color: rgba(250, 250, 250, 0.8);
+           /* background-color: rgba(179, 179, 179, 0.15); */
         /* display: inline-block; */
         vertical-align: top;
         padding: 0% 3% 1% 3%;
@@ -136,8 +137,8 @@ justify-content: center;
             .contact_info{
                 width: 100%;
                 min-height: 100%;
-                background-color: rgba(179, 179, 179, 0.15);
-                padding: 4%;
+                /* background-color: rgba(179, 179, 179, 0.15); */
+                padding-top: 4%;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 font-size: 80%;
@@ -147,7 +148,12 @@ justify-content: center;
 
             .buttons{
                 display: flex;
-                justify-content: center;
+                align-content: center;
+                /* background-color: rgb(197, 197, 197, 0.7); */
+                border-radius: 8px;
+                padding: 10px;
+                margin-left:10px;
+                margin-right: 10px;
             }
 /* 
                     .button{
@@ -299,7 +305,7 @@ justify-content: center;
     color: white;
     }
     .frontendbar>div{
-        background: linear-gradient(to right, #fe5769 50%, #c7529a 80%);
+        background: linear-gradient(to right, #b0cf59 10%, #cef366 90%);
         background-color: #58662a;
         animation: stretch100 1s ease-out;
         animation-timing-function: cubic-bezier(0.280, 0.840, 0.58, 1);
@@ -355,7 +361,7 @@ justify-content: center;
     color: white;
     }
     .lanbar>div{
-        background: linear-gradient(to right, #dae53d 10%, #3ecbf5 80%);
+        background: linear-gradient(to right, #b0cf59 10%, #cef366 90%);
         background-color: #3E432E;
         animation: stretch100 1s ease-out;
         max-width:100%;
@@ -410,7 +416,7 @@ justify-content: center;
     color: white;
     }
     .databar>div{
-        background: linear-gradient(to right, #443fdd 10%, #e6434b 80%);
+        background: linear-gradient(to right, #b0cf59 10%, #cef366 90%);
         background-color: #58662a;
         animation: stretch100 1s ease-out;
         animation-timing-function: cubic-bezier(0.280, 0.840, 0.58, 1);
@@ -467,7 +473,7 @@ justify-content: center;
     color: white;
     }
     .framebar>div{
-        background: linear-gradient(to right, #ee4636 10%, #e3df34 90%);
+        background: linear-gradient(to right, #b0cf59 10%, #cef366 90%);
         background-color: #3E432E;
         animation: stretch100 1s ease-out;
         max-width:100%;
@@ -647,8 +653,8 @@ justify-content: center;
         /* background: rgb(230, 230, 230); */
         border-radius: 50px;
         text-align: end;
-        box-shadow: 0px 4px 10px #696969;
-        border: solid 2pt rgb(85, 85, 85);
+        /* box-shadow: 0px 4px 10px #696969; */
+        /* border: solid 2pt rgb(85, 85, 85); */
         color: rgb(83, 83, 83);
         width: 45px;
         height: 45px;
@@ -706,7 +712,7 @@ justify-content: center;
         }
 
         .tab{
-            background: linear-gradient(to bottom right, #919191, #2b2b2b 90%);
+            background: linear-gradient(to bottom right, #949494, #303030 90%);
             /* background-color: rgb(235, 12, 68); */
             padding:1%;
             text-decoration-line: none;
@@ -719,7 +725,7 @@ justify-content: center;
 
         .tab2{
             /* background: linear-gradient(to bottom right, #eb0e3d, #9b0921 90%); */
-            background: linear-gradient(to bottom right, #919191, #2b2b2b 90%);
+            background: linear-gradient(to bottom right, #949494, #303030 90%);
 
             padding:1%;
             text-decoration-line: none;
@@ -729,3 +735,10 @@ justify-content: center;
             border-top-right-radius: 10%;
         }
         
+        .onetwo{
+            padding-top:12%;
+        }
+
+        .twotwo{
+            padding-top:12%;
+        }
